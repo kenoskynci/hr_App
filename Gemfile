@@ -1,6 +1,11 @@
 source 'https://rubygems.org'
 
 
+
+# googlecharts added for user graphic visualzation of data
+gem 'googlecharts'
+# devise added for user authentication
+gem 'devise'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'
 # Use sqlite3 as the database for Active Record
@@ -22,6 +27,11 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
+
+#added will paginate to break a long list of employees table into paginations
+
+# added jquery to 
+gem 'jquery-rails'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
