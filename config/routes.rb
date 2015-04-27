@@ -2,13 +2,14 @@ Rails.application.routes.draw do
   
   resources :profiles
   
+  devise_for :users
+  
   resources :employees do
     resources :leave_records
   end
   
-  devise_for :users, path_names: {sign_in: "login", sign_out: "logout"}
-  
   root to: "employees#index"
+  
   get '/signedinuserprofile' => 'profiles#signedinuserprofile'
   
   
